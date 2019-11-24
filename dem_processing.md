@@ -66,12 +66,22 @@ def valid_data(gdal_ds, band_number=1, write_valid=False, out_path=None):
 ```
 
 
-### 3. Support the selection of appropriate statistical tools and techniques
+### Multi-scale Topographic Position Index - TPI.py
+A topographic position index (or TPI) is a derivative created from a digital elevation model. It describes the relative position of the terrain - is a given area higher than the area around it or lower than the area around it? TPI's are useful for identifying ridges or depressions on the landscape. An application I have used TPI for is to identify slumps resulting from permafrost thaw, also known as thermokarst, specificaly active-layer-detachments. 
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+TPI's are generated with a moving window kernel, which compares the elevation of each cell with the average elevation of a given number cells around it. The resulting TPI is **highly** dependent on the number of cells considered in the kernel. A smaller kernel size will show smaller scale depressions and hills. A larger kernel size will show larger features.
 
-### 4. Provide a basis for further data collection through surveys or experiments
+<img src="images/dem_processing/TPI_fig.PNG?raw=true"/>
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Thus it is critical to match the kernel size to the features of interest. I was unable to find a tool that had a configurable kernel size - most (GDAL, ArcMap, etc.) use a standard 3x3 kernel for all terrain indicies. So I wrote a script that would allow a user to vary the kernel size. Here are examples TPI's generated from the same DEM showing a thermokarst thaw slump with differnt kernel sizes:
+3x3:
+<img src="images/dem_processing/TPI_9.png?raw=true"/>
+21x21:
+<img src="images/dem_processing/TPI_21.png?raw=true"/>
+50x50:
+<img src="images/dem_processing/TPI_50.png?raw=true"/>
+100X100:
+<img src="images/dem_processing/TPI_100.png?raw=true"/>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+It is clear the different kernel sizes accentuate diffrent features. This can be critical when creating a TPI to use in a feature identification workflow.
+
