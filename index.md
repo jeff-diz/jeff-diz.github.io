@@ -6,7 +6,7 @@
 
 [DEM Processing Tools](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
-[Project 1 Title](http://example.com/)
+[DEM Processing Tools](http://example.com/)
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
