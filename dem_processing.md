@@ -7,12 +7,12 @@
 As the PGC uses the stereo satellite imagery to create DEMs, there are sometimes areas of *No Data* in the resulting DEM. This is usually in areas of water, clouds, or shadow, where the point-matching algorithm (the PGC uses [SETSM](https://github.com/setsmdeveloper/SETSM) could not locate match points, or post-processing filters removed bad data or artifacts. This script includes a function to open a single band raster using GDAL and identify the areas of *No Data*. This function returns a count of valid data pixels and a total count so that users can get an idea of the quality of the DEM without needing to load it into a point and click GIS, compute statistics, set visualization, etc. The script includes options to write the valid data areas out as a binary raster.
 
 For example, consider the following area of interest over glacier terminus we wish to perform mass balance analysis on (forgive the coarse imagery):
-<img src="images/dem_processing/glacier_terminus.PNG?raw=true"/>
+<img src="images/dem_processing/glacier_terminus.png?raw=true"/>
 As this is a polar region, the ArcticDEM archive will likely have a large number of DEMs we can use, which we can identify from their extents, but how can we tell which have "good" data over our AOI without opening and viewing all of them in a GIS?
 The valid_data.py script will allow us to do this. Say this is what the DEM actually looks like:
-<img src="images/dem_processing/dem_hs.PNG?raw=true"/>
+<img src="images/dem_processing/dem_hs.png?raw=true"/>
 If we run the script and write the output as a binary raster, we get:
-<img src="images/dem_processing/valid_data.PNG?raw=true"/>
+<img src="images/dem_processing/valid_data.png?raw=true"/>
 Which shows clearly that we have valid data over our AOI. This binary raster will open much more quickly than the full resolution DEM and can also be used in subsequent selections.
 
 ```python
