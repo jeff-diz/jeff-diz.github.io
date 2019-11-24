@@ -4,7 +4,7 @@
 
 ### Polar Geospatial Center Code 
 
-[DEM Processing Tools](/sample_page)---[Project Repository](https://github.com/jeff-diz/dem_processing)
+[DEM Processing Tools](/dem_processing)---[Project Repository](https://github.com/jeff-diz/dem_processing)
 [<img src="images/dem_derivatives.png?raw=true"/>](https://github.com/jeff-diz/dem_processing)
 <br>
 [Object-Based-Images-Analysis: Phragmites-Australis](https://umn.maps.arcgis.com/apps/MapJournal/index.html?appid=c6c2aa9fa0684b92ae0e29a8bbb9212d)
