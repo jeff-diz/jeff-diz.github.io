@@ -4,7 +4,7 @@
 
 ### Polar Geospatial Center Code 
 
-[Project 1 Title](/sample_page)
+[DEM Processing Tools](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 [Project 1 Title](http://example.com/)
 ---
