@@ -1,4 +1,5 @@
-## DEM Processing Code written for the [Polar Geospatial Center](https://www.pgc.umn.edu/)
+## DEM Processing Code <br>
+*written for the [Polar Geospatial Center](https://www.pgc.umn.edu/)*
 
 **Project description:** Code written for working with DEM produced by the Polar Geospatial Center. Some functionality is highlighted below"
 
