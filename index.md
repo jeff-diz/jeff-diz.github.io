@@ -7,6 +7,7 @@
 [DEM Processing Tools](/sample_page)
 <img src="images/dem_derivatives.png?raw=true"/>
 [Project Repository](https://github.com/jeff-diz/dem_processing)
+<br><br>
 <!-- --- -->
 [Object-Based-Images-Analysis: Phragmites-Australis Title](https://umn.maps.arcgis.com/apps/MapJournal/index.html?appid=c6c2aa9fa0684b92ae0e29a8bbb9212d)
 <img src="images/obia_phrag_thumn.PNG?raw=true"/>
