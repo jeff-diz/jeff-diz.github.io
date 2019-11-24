@@ -6,10 +6,10 @@
 
 [DEM Processing Tools](/sample_page)
 <img src="images/dem_derivatives.png?raw=true"/>
-[DEM Processing Tools](http://example.com/)
----
-[Project 2 Title](/pdf/sample_presentation.pdf)<!-- 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Project Repository](https://github.com/jeff-diz/dem_processing)
+<!-- --- -->
+[Object-Based-Images-Analysis: Phragmites-Australis Title](https://umn.maps.arcgis.com/apps/MapJournal/index.html?appid=c6c2aa9fa0684b92ae0e29a8bbb9212d)
+<img src="images/obia_phrag_thumn.PNG?raw=true"/>
 [Project 2 Title](http://example.com/)
 ---
 [Project 3 Title](http://example.com/)
@@ -24,7 +24,7 @@
 ---
 ### Personal Repos
 [Project 1 Title](/sample_page)
-[<img src="images/dummy_thumbnail.jpg?raw=true"/>](http://example.com/) -->
+[<img src="images/dummy_thumbnail.jpg?raw=true"/>](http://example.com/)
 
 ---
 
@@ -32,5 +32,4 @@
 
 
 ---
-<p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
-<!-- Remove above link if you don't want to attibute -->
+
