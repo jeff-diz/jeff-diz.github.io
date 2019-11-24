@@ -8,7 +8,7 @@
 <img src="images/dem_derivatives.png?raw=true"/>
 [DEM Processing Tools](http://example.com/)
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
+[Project 2 Title](/pdf/sample_presentation.pdf)<!-- 
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 [Project 2 Title](http://example.com/)
 ---
@@ -24,7 +24,7 @@
 ---
 ### Personal Repos
 [Project 1 Title](/sample_page)
-[<img src="images/dummy_thumbnail.jpg?raw=true"/>](http://example.com/)
+[<img src="images/dummy_thumbnail.jpg?raw=true"/>](http://example.com/) -->
 
 ---
 
