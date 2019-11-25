@@ -12,4 +12,4 @@
 <br><br>
 [Campaign to Save the Boundary Waters](/cstbw)
 <br><br>
-[<img src="images/stbw_thum.jpg?raw=true" width="300" height="300">](/cstbw)
+[<img src="images/stbw_thum.jpg?raw=true" width="389" height="300">](/cstbw)
