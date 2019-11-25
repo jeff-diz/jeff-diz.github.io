@@ -8,3 +8,4 @@ However, polar regions obviously have large amounts of sea-ice. Imagery during i
 The [National Snow and Ice Data Center (NSIDC)](https://nsidc.org/) creates daily sea-ice concentration maps with a 25km resolution. This imagery selection schema assesses the sea-ice concentration for each image in the archive by sampling the NSIDC sea-ice concentration daily map corresponding to the date each image was acquired.
 
 [Coastline Imagery Selection](pdf\coastline_selection.pdf) 
+[Repository](https://github.com/jeff-diz/coastline)
