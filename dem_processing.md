@@ -1,19 +1,21 @@
 ## DEM Processing Code <br>
 *written for the [Polar Geospatial Center](https://www.pgc.umn.edu/)*
 
-**Project description:** Code written for working with DEM produced by the Polar Geospatial Center. Some functionality is highlighted below"
+**Project description:** Code written for working with DEMs produced by the Polar Geospatial Center. Some functionality is highlighted below"
 
 ### Create a *No Data Mask* --- [valid_data.py](https://github.com/jeff-diz/dem_processing/blob/master/lib/valid_data.py)
 As the PGC uses the stereo satellite imagery to create DEMs, there are sometimes areas of *No Data* in the resulting DEM. This is usually in areas of water, clouds, or shadow, where the point-matching algorithm (the PGC uses [SETSM](https://github.com/setsmdeveloper/SETSM) could not locate match points, or post-processing filters removed bad data or artifacts. This script includes a function to open a single band raster using GDAL and identify the areas of *No Data*. This function returns a count of valid data pixels and a total count so that users can get an idea of the quality of the DEM without needing to load it into a point and click GIS, compute statistics, set visualization, etc. The script includes options to write the valid data areas out as a binary raster.
 
 For example, consider the following area of interest over glacier terminus we wish to perform mass balance analysis on (forgive the coarse imagery):
-<img src="images/dem_processing/glacier_terminus.png?raw=true"/>
+<img src="images/dem_processing/glacier_terminus.png?raw=true"/><br>
 As this is a polar region, the ArcticDEM archive will likely have a large number of DEMs we can use, which we can identify from their extents, but how can we tell which have "good" data over our AOI without opening and viewing all of them in a GIS?
-The valid_data.py script will allow us to do this. Say this is what the DEM actually looks like:
+The valid_data.py script will allow us to do this. Say this is what the DEM actually looks like:<br>
 <img src="images/dem_processing/dem_hs.png?raw=true"/>
-If we run the script and write the output as a binary raster, we get:
+If we run the script and write the output as a binary raster, we get:<br>
 <img src="images/dem_processing/valid_data.png?raw=true"/>
 Which shows clearly that we have valid data over our AOI. This binary raster will open much more quickly than the full resolution DEM and can also be used in subsequent selections.
+
+The relevent function:
 
 ```python
 def valid_data(gdal_ds, band_number=1, write_valid=False, out_path=None):
@@ -72,14 +74,14 @@ TPI's are generated with a moving window kernel, which compares the elevation of
 
 <img src="images/dem_processing/TPI_fig.PNG?raw=true"/>
 
-Thus it is critical to match the kernel size to the features of interest. I was unable to find a tool that had a configurable kernel size - most (GDAL, ArcMap, etc.) use a standard 3x3 kernel for all terrain indicies. So I wrote a script that would allow a user to vary the kernel size. Here are examples TPI's generated from the same DEM showing a thermokarst thaw slump with differnt kernel sizes:
+Thus it is critical to match the kernel size to the features of interest. I was unable to find a tool that had a configurable kernel size - most (GDAL, ArcMap, etc.) use a standard 3x3 kernel for all terrain indicies. So I wrote a script that would allow a user to vary the kernel size. Here are examples TPI's generated from the same DEM showing a thermokarst thaw slump with differnt kernel sizes:<br>
 3x3:
-<img src="images/dem_processing/TPI_9.png?raw=true"/>
+<img src="images/dem_processing/TPI_9.png?raw=true"/><br>
 21x21:
-<img src="images/dem_processing/TPI_21.png?raw=true"/>
+<img src="images/dem_processing/TPI_21.png?raw=true"/><br>
 50x50:
-<img src="images/dem_processing/TPI_50.png?raw=true"/>
+<img src="images/dem_processing/TPI_50.png?raw=true"/><br>
 100X100:
-<img src="images/dem_processing/TPI_100.png?raw=true"/>
+<img src="images/dem_processing/TPI_100.png?raw=true"/><br>
 
 It is clear the different kernel sizes accentuate diffrent features. This can be critical when creating a TPI to use in a feature identification workflow.
