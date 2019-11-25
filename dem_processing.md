@@ -66,7 +66,7 @@ def valid_data(gdal_ds, band_number=1, write_valid=False, out_path=None):
 ```
 
 
-### Multi-scale Topographic Position Index - TPI.py
+### Multi-Scale Topographic Position Index - TPI.py
 A topographic position index (or TPI) is a derivative created from a digital elevation model. It describes the relative position of the terrain - is a given area higher than the area around it or lower than the area around it? TPI's are useful for identifying ridges or depressions on the landscape. An application I have used TPI for is to identify slumps resulting from permafrost thaw, also known as thermokarst, specificaly active-layer-detachments. 
 
 TPI's are generated with a moving window kernel, which compares the elevation of each cell with the average elevation of a given number cells around it. The resulting TPI is **highly** dependent on the number of cells considered in the kernel. A smaller kernel size will show smaller scale depressions and hills. A larger kernel size will show larger features.
@@ -84,4 +84,3 @@ Thus it is critical to match the kernel size to the features of interest. I was 
 <img src="images/dem_processing/TPI_100.png?raw=true"/>
 
 It is clear the different kernel sizes accentuate diffrent features. This can be critical when creating a TPI to use in a feature identification workflow.
-

@@ -1,12 +1,11 @@
-title: Jeff Disbrow # your name (or website title) here
-logo: "/images/logo.png?raw=true" # your photo (or logo) here
-description: > # your text below (remove <br> elements if you don't need line breaks)
+title: Jeff Disbrow 
+logo: "/images/logo.png?raw=true" 
+description: > 
   Interests:<br>
   -Remote Sensing<br>
-  -Geospatial Analysis<br>
   -Open-source Developmetn<br>
-  -Landscape Change<br>
   -Machine Learning / Deep Learning <br>
+  -Landscape Change<br>
   <br>
   Skills:<br>
   -ArcGIS Suite<br>
