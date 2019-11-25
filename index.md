@@ -1,5 +1,4 @@
-## Portfolio
-
+## Portfolio of Work
 ---
 
 [Imagery Selection for Polar Coastline Mapping](https://github.com/jeff-diz/coastline)---[Project Repository](https://github.com/jeff-diz/coastline)<br>
