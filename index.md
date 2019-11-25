@@ -1,8 +1,8 @@
 ## Portfolio of Work
 ---
 
-[Imagery Selection for Polar Coastline Mapping](https://github.com/jeff-diz/coastline)---[Project Repository](https://github.com/jeff-diz/coastline)<br>
-<img src="images/sea_ice_example.png?raw=true" width="300" height="300">](https://github.com/jeff-diz/coastline)<br>
+[Imagery Selection for Polar Coastline Mapping](/coastline)---[Project Repository](https://github.com/jeff-diz/coastline)<br>
+[<img src="images/sea_ice_example.png?raw=true" width="300" height="300">](https://github.com/jeff-diz/coastline)<br>
 <br><br>
 [DEM Processing Tools](/dem_processing)---[Project Repository](https://github.com/jeff-diz/dem_processing)<br>
 [<img src="images/dem_derivatives.png?raw=true" width="300" height="300">](https://github.com/jeff-diz/dem_processing)
