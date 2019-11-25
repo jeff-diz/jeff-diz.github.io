@@ -1,9 +1,9 @@
-## DEM Processing Code <br>
+# DEM Processing Code <br>
 *written for the [Polar Geospatial Center](https://www.pgc.umn.edu/)*
 
 **Project description:** Code written for working with DEMs produced by the Polar Geospatial Center. Some functionality is highlighted below"
 
-### Create a *No Data Mask* --- [valid_data.py](https://github.com/jeff-diz/dem_processing/blob/master/lib/valid_data.py)
+## Create a *No Data Mask* --- [valid_data.py](https://github.com/jeff-diz/dem_processing/blob/master/lib/valid_data.py)
 As the PGC uses the stereo satellite imagery to create DEMs, there are sometimes areas of *No Data* in the resulting DEM. This is usually in areas of water, clouds, or shadow, where the point-matching algorithm (the PGC uses [SETSM](https://github.com/setsmdeveloper/SETSM) could not locate match points, or post-processing filters removed bad data or artifacts. This script includes a function to open a single band raster using GDAL and identify the areas of *No Data*. This function returns a count of valid data pixels and a total count so that users can get an idea of the quality of the DEM without needing to load it into a point and click GIS, compute statistics, set visualization, etc. The script includes options to write the valid data areas out as a binary raster.
 
 For example, consider the following area of interest over glacier terminus we wish to perform mass balance analysis on (forgive the coarse imagery):
@@ -67,7 +67,7 @@ def valid_data(gdal_ds, band_number=1, write_valid=False, out_path=None):
     return valid_pixels, total_pixels
 ```
 <br>
-### Multi-Scale Topographic Position Index - [TPI.py](https://github.com/jeff-diz/dem_processing/blob/master/TPI.py)
+## Multi-Scale Topographic Position Index - [TPI.py](https://github.com/jeff-diz/dem_processing/blob/master/TPI.py)
 A topographic position index (or TPI) is a derivative created from a digital elevation model. It describes the relative position of the terrain - is a given area higher than the area around it or lower than the area around it? TPI's are useful for identifying ridges or depressions on the landscape. An application I have used TPI for is to identify slumps resulting from permafrost thaw, also known as thermokarst, specificaly active-layer-detachments. 
 
 TPI's are generated with a moving window kernel, which compares the elevation of each cell with the average elevation of a given number cells around it. The resulting TPI is **highly** dependent on the number of cells considered in the kernel. A smaller kernel size will show smaller scale depressions and hills. A larger kernel size will show larger features.
