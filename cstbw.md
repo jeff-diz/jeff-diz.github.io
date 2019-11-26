@@ -10,5 +10,5 @@
 
 <img src="images/stbw/stbw_thumb.jpg?raw=true"/><br>
 
-<img src="images/stbw/wild_rice_mpca_pwrw_notable_missing.jpg?raw=true"/>(images/stbw/wild_rice_mpca_pwrw_notable_missing.jpg)<br>
+[<img src="images/stbw/wild_rice_mpca_pwrw_notable_missing.jpg?raw=true"/>](images/stbw/wild_rice_mpca_pwrw_notable_missing.jpg)<br>
 
