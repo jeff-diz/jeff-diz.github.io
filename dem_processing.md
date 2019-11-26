@@ -11,9 +11,9 @@ For example, consider the following area of interest over glacier terminus we wi
 
 As this is a polar region, the ArcticDEM archive will likely have a large number of DEMs we can use, which we can identify from their extents, but how can we tell which have "good" data over our AOI without opening and viewing all of them in a GIS?
 The valid_data.py script will allow us to do this. Say this is what the DEM actually looks like:<br>
-<img src="images/dem_processing/dem_hs.png?raw=true"/>
+<img src="images/dem_processing/dem_hs.png?raw=true"/><br>
 If we run the script and write the output as a binary raster, we get:<br>
-<img src="images/dem_processing/valid_data.png?raw=true"/>
+<img src="images/dem_processing/valid_data.png?raw=true"/><br>
 Which shows clearly that we have valid data over our AOI. This binary raster will open much more quickly than the full resolution DEM and can also be used in subsequent selections.
 
 The relevent function:
