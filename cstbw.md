@@ -1,4 +1,4 @@
-# Campaign to Save the Boundary Waters <br>
+## Campaign to Save the Boundary Waters <br>
 
 <img src="images/stbw/activists_by_state.jpg?raw=true"/><br>
 
